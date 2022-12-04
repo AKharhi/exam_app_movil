@@ -1,0 +1,67 @@
+
+    
+    
+{% extends 'core/base.html'%}
+{% load static %}
+
+{% block title %}Registro{% endblock %}
+ 
+{% block content %}
+ <section class="page-section about-heading">
+      <div class="container">
+        <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="img/contact.jpg" alt="">
+        <div class="about-heading-content">
+          <div class="row">
+            <div class="col-xl-9 col-lg-10 mx-auto">
+              <div class="bg-faded rounded p-5">
+                <h2 class="section-heading mb-4">
+                  <span class="section-heading-upper">Registro</span>
+                   <br>
+                  {% comment %} <span class="section-heading-lower">Contacto</span> {% endcomment %}
+                </h2>
+
+           
+            <form method="post" action ="" id="formulario"   >
+            {% csrf_token %}
+            <div class="form-group row col-md-6 form-label inline" >
+         
+            {{ form.as_table}}
+            </div>
+
+           <div class="col-md-6">
+
+                <input type="submit"  id="btnvalida" class="form-control btn btn-warning" id="sendform1"  value="ENVIAR">
+                
+
+            </div>
+            <div class="col-md-6">
+                <input type="reset" class="form-control btn btn-warning" value="LIMPIAR">
+            </div>
+
+        </form>
+            
+
+            
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+Si quiere Modificar o Eliminar sus datos del Registro
+
+
+               <br>
+               <button class= "btn btn-primary"  type="submit"><a class="letra_link" href="datos_cliente">MODIFICAR DATOS </a></button>
+            <br>
+             <br>
+
+
+
+   {% endblock %}
+
+
+
