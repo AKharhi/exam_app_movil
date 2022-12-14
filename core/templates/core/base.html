@@ -7,13 +7,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/png" href="{% static 'core/img/favicongarden.png'%}">
     <link rel="stylesheet" href="{% static 'core/css/style.css'%}">
     <link href="{% static 'core/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <title>{% block title %}{% endblock %} | Vive Verde</title>
+    <title>{% block title %}{% endblock %} Asistencia DuocUC</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&display=swap" rel="stylesheet">
@@ -34,7 +33,7 @@
         <nav class="navbar navbar-expand-lg navbar-light  ">
             <div class="container-fluid">
                 <a class="nav-link active" aria-current="page" href="index"><img class="tamanologo"
-                        src="{% static 'core/img/logo_DUOC.png'%}"></a>
+                        src="{% static 'core/img/DuocUc.png'%}"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -50,35 +49,13 @@
                             <a class="nav-link active" href="contact">Escríbenos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="nosotros">Nosotros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="datos_seguimiento">Sigue tu compra</a>
+                            <a class="nav-link active" href="nosotros">Sobre Duoc</a>
                         </li>
                     </ul>
 
-                    <div class="d-flex">
-                        <div class="box">
-                            <div class="container-4">
-                                <input type="search" id="search" placeholder="Buscar en Vive Verde..." />
-                                <button  class="icon" ><img src="https://img.icons8.com/material-two-tone/48/000000/search.png"/><i class="fa fa-search"></i></button>
-                            </div>
-                        </div>
-                    </div>
+                   <br>
                     <br>
-                    <br>
-                    <div class="d-flex">
-                       
-                        <a href="registrodos" class="nav-link active" id="reg">Registro</a>
-                    </div>
-                    <div class="d-flex">
-                        <button onclick="document.getElementById('id01').style.display='block'" class="form-control btn btn-success btn-md"">Ingresar</button>
-                    </div>
-                    <div class="d-grid gap-2 d-md-flex justify-content-md-end footpaddd">
-
-                        <button class="btn btn btn-block" type="button"><a href="carrito" class="card-link1"><img
-                                    src="{% static 'core/img/carrito-de-compras.png'%}" alt=""></a></button>
-                    </div>
+                   
                 </div>
             </div>
 
@@ -92,26 +69,7 @@
                   <img class="tamanologo" src="{% static 'core/img/logogranja1.jpg'%}" alt="Avatar" class="avatar">
                 </div>
             
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-md-3"></div>
-                        <div class="col-md-6" >
-                            <label for="uname"><b>Nombre de usuario</b></label>
-                            <input type="text" placeholder="Ingrese su email" name="uname" required>
-                        
-                            <label for="psw"><b>Contraseña</b></label>
-                            <input type="password" placeholder="Ingrese su contraseña" name="psw" required>
-                                
-                    
-                            <a href="nosotros" class="form-control btn btn-sucess  buttono" id="welcome" type="submit">Login</a>
-                            <button type="reset" class="form-control btn btn-warning buttono" >Limpiar</button>
-                            <label>
-                                <input type="checkbox" checked="checked" name="remember"> Recordar contraseña
-                            </label>
-                        </div>
-                        <div class="col-md-3"></div>
-                    </div>
-                </div>
+                               </div>
             
        
                 </div> 
@@ -124,24 +82,13 @@
    {% block content %}{% endblock %}
     <footer>
         <div class="footpadd">
-            <div>
-                <h5 id="suscripcion">"Crea tu cuenta y hazte socio de la fundación "ViveVerde" para obtener un 5% de
-                    descuento en el total de tu compra"</h5>
-                <br>
-                <a class="btn btn-primary" href="registrodos" role="button">Suscríbete aquí</a>
-
-            </div>
-        </div>
-        <div class="footpadd">
             <a href="https://whatsapp.com"><img
                     src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/000000/external-whatsapp-whatsapp-flatart-icons-outline-flatarticons.png" /></a>
             <a href="https://twitter.com"><img src="https://img.icons8.com/ios/50/000000/twitter--v1.png" /></a>
             <a href="https://www.instagram.com"><img
                     src="https://img.icons8.com/ios/50/000000/instagram-new--v1.png" /></a>
-            <p><i>"Vive Verde". Todos los derechos reservados.</i></p>
+            <p><i>Todos los derechos reservados.</i></p>
         </div>
-
-
     </footer>
 
     <script src="{% static 'core/vendor/jquery/jquery.min.js' %}"></script>
