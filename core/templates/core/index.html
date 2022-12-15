@@ -11,9 +11,15 @@
                     <h1 id="vive"> Nueva Asistencia</h1>
                     <h5 id="vive"> Alumnos DuocUC</h5>
                     <br>
-                    <p id="ins">Descarga la nueva aplicación</p>
-                    {% comment %} <button id="ins"(click)="deteccion()">Pinchando aquí</button> {% endcomment %}
-                    <a id="ins" href={% static 'core/apk/app-release.apk' %}>Pinchando Aquí</a>
+                    <a id="ins" href={% static 'core/apk/app-release.apk' %}>Descargar directa</a>
+                    <br>
+                    <a id="ins" href="javascript:mostrar()" >Descarga para equipos móviles</a>
+                    <div id="flotante" style="display:none;" class="contenedor">
+                        <a id="ins2">Lee el Qr</a>
+                        <div id="contenedorQR" class="contenedorQR"></div>
+                        <div><a id="ins2" href="javascript:cerrar();">Cerrar QR</a></div>
+
+                    </div>
                 </div>
                 {% comment %} <div>
                     <h1 id="dispositivo__texto"></h1>                     
