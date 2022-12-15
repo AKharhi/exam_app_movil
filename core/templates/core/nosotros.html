@@ -1,20 +1,18 @@
-
-
 {% extends 'core/base.html'%}
 
 {% block title %}Nosotros{% endblock %}
 {% load static %}
 
-    {% block content %}
+{% block content %}
+  <section class="page-section about-heading">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-md-2"></div>
           <div class="col-md-8" >
-            <div class="card text-center border-warning mb-3" style="max-height: 18rem;">
-              <div class="card-body">
-                <h4 class="card-title">Sobre Duoc</h4>
-              </div>
-            </div>
+                <h2 class="section-heading mb-4">
+                  <span class="section-heading-upper">Sobre Duoc</span>
+                   <br>
+                </h2>
           </div>
         <div class="col-md-2"></div>
       </div> 
@@ -37,37 +35,13 @@
       <div class="row align-items-center">
         <div class="col-md-2"></div>
         <div class="col-md-4">
-          <div class="card">
             <img class="cact" src="{% static 'core/img/Inform.jpeg'%}" alt="">
-            <div>
-              <p class="comment">Escuela de Informática</p>
-            </div>
-          </div>
         </div>
-        <div class="col-md-4">
-          <div class="card">
             <img class="cact" src="{% static 'core/img/Apis.png'%}" alt="">
-            <div>
-              <p class="comment">Integración de Sistemas</p>
-            </div>
-          </div>
-        </div>
         <div class="col-md-2"></div>
       </div>
     </div>
-
-    <div class="container">
-      <div class="row g-2">
-        <div class="col-3"></div>
-        <div class="col-6">
-          <h3 id="ubi">Mesa de Servicios</h3>
-          <p class="address">(+56) 44220 1098 / (+56) 227120245</p>
-          <div id="map" class="map"></div>
-        </div>
-        <div class="col-3"></div>
-      </div>
-    </div>
-    {% endblock %}
+{% endblock %}
 
 
    
