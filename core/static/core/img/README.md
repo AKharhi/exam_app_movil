@@ -1,2 +1,2 @@
 # proy_semestral_nk
-Proyecto semestral  programación web 
+Proyecto semestral  programación aplicaciones móviles
