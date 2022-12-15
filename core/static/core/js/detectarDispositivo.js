@@ -1,5 +1,6 @@
 const dispositivo__texto = document.getElementById('dispositivo__texto')
 
+
 class Dispositivo {
     esMovil = false
     esTablet = false

@@ -7,6 +7,12 @@ body{
     
 }
 
+
+.menu{
+    padding: 1rem;
+    justify-items: flex;
+}
+
 #vive{
     color:navy;
     font-size: 55px;
@@ -17,6 +23,13 @@ body{
     color:black;
     font-size: 30px;
     font-family:'Times New Roman';
+}
+
+#ins2{
+    color:red;
+    font-size: 30px;
+    font-family:'Times New Roman';
+    text-align: center;
 }
 
 footer{
@@ -52,7 +65,7 @@ nav a:hover {
 }
 .font{
     font-family: 'Crete Round', serif;
-    text-align: right;
+    text-align: center;
     align-items: center;
     padding-left:10px;
     padding-top: 0px;
@@ -134,4 +147,17 @@ nav a:hover {
 h1,h2,h3,h4,h5,h6{
 	color:navy;
     font-size: xx-large;
+}
+
+
+.close{
+    color:black;
+    font-size: 30px;
+    font-family:'Times New Roman';
+}
+
+.contenedorQR {
+	display: flex;
+	justify-content: center;
+	padding: 10px 0;
 }
